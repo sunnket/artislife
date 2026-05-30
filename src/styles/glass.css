@@ -1,0 +1,39 @@
+/* Real glass: translucent fill, blur, hairline border, top inner highlight. */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Glass button — hover brightens + scales + soft glow. */
+.glass-btn {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  box-shadow: var(--glass-shadow);
+  color: var(--text);
+  font-family: var(--grotesque);
+  cursor: pointer;
+  transition: transform 0.4s var(--ease-soft), background 0.4s var(--ease-soft),
+    border-color 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft);
+  user-select: none;
+}
+.glass-btn:hover {
+  transform: scale(1.02);
+  background: rgba(28, 28, 34, 0.55);
+  border-color: var(--gold-dim);
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.5), 0 0 24px rgba(212, 180, 131, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.glass-btn:active {
+  transform: scale(0.99);
+}
+.glass-btn.is-active {
+  border-color: var(--gold-dim);
+  color: var(--gold);
+}

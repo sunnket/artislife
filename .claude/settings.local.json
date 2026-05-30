@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(gh auth *)",
+      "PowerShell($ErrorActionPreference='SilentlyContinue'; \"gh: \" + \\(\\(Get-Command gh\\).Source\\); \"git: \" + \\(\\(Get-Command git\\).Source\\); \"user.name: \" + \\(git config --global user.name\\); \"user.email: \" + \\(git config --global user.email\\); \"cred.helper: \" + \\(git config --global credential.helper\\); \"GH_TOKEN set: \" + [bool]$env:GH_TOKEN; \"GITHUB_TOKEN set: \" + [bool]$env:GITHUB_TOKEN)"
+    ]
+  }
+}

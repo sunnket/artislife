@@ -1,0 +1,25 @@
+:root {
+  /* Palette — near-monochrome void + warm spotlight; art is the only real color */
+  --void: #0a0a0c;
+  --gold: #d4b483;
+  --gold-dim: rgba(212, 180, 131, 0.55);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --text-faint: rgba(255, 255, 255, 0.42);
+
+  /* Glass (Section 8) */
+  --glass-bg: rgba(18, 18, 22, 0.45);
+  --glass-blur: 24px;
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-radius: 18px;
+  --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  /* Type */
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --grotesque: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Motion */
+  --ease-steadicam: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+}
